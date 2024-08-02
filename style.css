@@ -1,0 +1,176 @@
+/* Define o estilo do body, centralizando o conteúdo e ajustando o fundo */
+body {
+    display: flex; /* Usa Flexbox para centralizar o conteúdo */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Define a altura como 100% da altura da visualização */
+    margin: 0; /* Remove a margem padrão */
+    background: url('img/nike-nba.jpeg') no-repeat center center fixed; /* Imagem de fundo */
+    background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
+    font-family: Arial, sans-serif; /* Define a fonte padrão */
+}
+
+/* Estilo para o container do formulário de login */
+.login-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco semitransparente */
+    padding: 30px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para o container */
+    width: 350px; /* Largura do container */
+    text-align: center; /* Texto centralizado */
+    animation: fadeIn 1s ease-in-out; /* Animação de fade-in */
+    backdrop-filter: blur(10px); /* Aplica desfoque ao fundo */
+}
+
+/* Animação de fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Transparência inicial */
+        transform: translateY(-20px); /* Posição inicial acima */
+    }
+    to {
+        opacity: 1; /* Transparência final */
+        transform: translateY(0); /* Posição final */
+    }
+}
+
+/* Estilo para o container da logo */
+.logo-container {
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+/* Estilo para a imagem da logo */
+.logo {
+    width: 100px; /* Largura da logo */
+    cursor: pointer; /* Cursor pointer para indicar que a imagem é clicável */
+    animation: rotate 3s linear infinite; /* Faz a imagem girar continuamente */
+}
+
+/* Animação de rotação */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg); /* Posição inicial */
+    }
+    100% {
+        transform: rotate(360deg); /* Posição final */
+    }
+}
+
+/* Estilo para o título da seção de login */
+.login-container h2 {
+    margin-bottom: 20px; /* Espaçamento inferior */
+    color: #333; /* Cor do texto */
+}
+
+/* Estilo para o grupo de formulário */
+.form-group {
+    margin-bottom: 15px; /* Espaçamento inferior */
+    text-align: left; /* Texto alinhado à esquerda */
+}
+
+/* Estilo para os rótulos dos campos de entrada */
+.form-group label {
+    display: block; /* Exibido como um bloco */
+    margin-bottom: 5px; /* Espaçamento inferior */
+    color: #333; /* Cor do texto */
+}
+
+/* Estilo para os campos de entrada */
+.form-group input {
+    width: 100%; /* Largura total do container pai */
+    padding: 10px; /* Espaçamento interno */
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+    border: 1px solid #ccc; /* Borda cinza clara */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: border-color 0.3s; /* Transição suave para a cor da borda */
+}
+
+/* Estilo para os campos de entrada quando focados */
+.form-group input:focus {
+    border-color: #007bff; /* Cor da borda ao focar */
+    outline: none; /* Remove o contorno padrão */
+}
+
+/* Estilo para os botões */
+button {
+    width: 100%; /* Largura total do container pai */
+    padding: 12px; /* Espaçamento interno */
+    background-color: #007bff; /* Cor de fundo azul */
+    border: none; /* Remove a borda padrão */
+    color: white; /* Cor do texto branca */
+    font-size: 16px; /* Tamanho da fonte */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor pointer para indicar que é clicável */
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+}
+
+/* Estilo para os botões ao passar o mouse */
+button:hover {
+    background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilo para o botão de login com o Google */
+.google-button {
+    display: flex; /* Usa Flexbox para alinhar o conteúdo */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    width: 100%; /* Largura total do container pai */
+    padding: 12px; /* Espaçamento interno */
+    background-color: #4285f4; /* Cor de fundo azul Google */
+    border: none; /* Remove a borda padrão */
+    color: white; /* Cor do texto branca */
+    font-size: 16px; /* Tamanho da fonte */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor pointer para indicar que é clicável */
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+    margin-top: 15px; /* Espaçamento superior */
+}
+
+/* Estilo para o botão de login com o Google ao passar o mouse */
+.google-button:hover {
+    background-color: #357ae8; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilo para o logo do Google dentro do botão */
+.google-logo {
+    width: 20px; /* Largura do logo */
+    margin-right: 10px; /* Espaçamento à direita */
+}
+
+/* Estilo para as mensagens de erro */
+.error {
+    color: red; /* Cor do texto vermelha */
+    font-size: 12px; /* Tamanho da fonte */
+    height: 12px; /* Altura fixa */
+}
+
+/* Estilo para a mensagem de erro ou sucesso */
+#message {
+    margin-top: 15px; /* Espaçamento superior */
+    color: red; /* Cor do texto vermelha (pode ser alterada via JavaScript) */
+}
+
+/* Estilo para o texto da política de privacidade e termos de uso */
+.policy-text {
+    margin-top: 20px; /* Espaçamento superior */
+    font-size: 14px; /* Tamanho da fonte */
+    color: #666; /* Cor do texto */
+}
+
+/* Estilo para os links dentro do texto da política */
+.policy-text a {
+    color: #007bff; /* Cor do link azul */
+    text-decoration: none; /* Remove o sublinhado padrão */
+}
+
+/* Estilo para os links ao passar o mouse */
+.policy-text a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Estilo para o separador visual */
+.separator {
+    margin: 15px 0; /* Espaçamento superior e inferior */
+    text-align: center; /* Texto centralizado */
+    color: #666; /* Cor do texto */
+}
