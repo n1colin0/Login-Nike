@@ -1,176 +1,165 @@
 /* Define o estilo do body, centralizando o conteúdo e ajustando o fundo */
 body {
-    display: flex; /* Usa Flexbox para centralizar o conteúdo */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    height: 100vh; /* Define a altura como 100% da altura da visualização */
-    margin: 0; /* Remove a margem padrão */
-    background: url('img/nike-nba.jpeg') no-repeat center center fixed; /* Imagem de fundo */
-    background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
-    font-family: Arial, sans-serif; /* Define a fonte padrão */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url('img/nike-nba.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
 }
 
 /* Estilo para o container do formulário de login */
 .login-container {
-    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco semitransparente */
-    padding: 30px; /* Espaçamento interno */
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para o container */
-    width: 350px; /* Largura do container */
-    text-align: center; /* Texto centralizado */
-    animation: fadeIn 1s ease-in-out; /* Animação de fade-in */
-    backdrop-filter: blur(10px); /* Aplica desfoque ao fundo */
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+    backdrop-filter: blur(10px);
 }
 
 /* Animação de fade-in */
 @keyframes fadeIn {
     from {
-        opacity: 0; /* Transparência inicial */
-        transform: translateY(-20px); /* Posição inicial acima */
+        opacity: 0;
+        transform: translateY(-20px);
     }
     to {
-        opacity: 1; /* Transparência final */
-        transform: translateY(0); /* Posição final */
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
 /* Estilo para o container da logo */
 .logo-container {
-    margin-bottom: 20px; /* Espaçamento inferior */
+    margin-bottom: 20px;
 }
 
 /* Estilo para a imagem da logo */
 .logo {
-    width: 100px; /* Largura da logo */
-    cursor: pointer; /* Cursor pointer para indicar que a imagem é clicável */
-    animation: rotate 3s linear infinite; /* Faz a imagem girar continuamente */
+    width: 100px;
+    cursor: pointer;
+    animation: rotate 3s linear infinite;
 }
 
 /* Animação de rotação */
 @keyframes rotate {
     0% {
-        transform: rotate(0deg); /* Posição inicial */
+        transform: rotate(0deg);
     }
     100% {
-        transform: rotate(360deg); /* Posição final */
+        transform: rotate(360deg);
     }
 }
 
 /* Estilo para o título da seção de login */
 .login-container h2 {
-    margin-bottom: 20px; /* Espaçamento inferior */
-    color: #333; /* Cor do texto */
-}
-
-/* Estilo para o grupo de formulário */
-.form-group {
-    margin-bottom: 15px; /* Espaçamento inferior */
-    text-align: left; /* Texto alinhado à esquerda */
-}
-
-/* Estilo para os rótulos dos campos de entrada */
-.form-group label {
-    display: block; /* Exibido como um bloco */
-    margin-bottom: 5px; /* Espaçamento inferior */
-    color: #333; /* Cor do texto */
+    margin-bottom: 20px;
+    color: #333;
 }
 
 /* Estilo para os campos de entrada */
-.form-group input {
-    width: 100%; /* Largura total do container pai */
-    padding: 10px; /* Espaçamento interno */
-    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
-    border: 1px solid #ccc; /* Borda cinza clara */
-    border-radius: 5px; /* Bordas arredondadas */
-    transition: border-color 0.3s; /* Transição suave para a cor da borda */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
 }
 
-/* Estilo para os campos de entrada quando focados */
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
 .form-group input:focus {
-    border-color: #007bff; /* Cor da borda ao focar */
-    outline: none; /* Remove o contorno padrão */
+    border-color: #007bff;
+    outline: none;
 }
 
 /* Estilo para os botões */
 button {
-    width: 100%; /* Largura total do container pai */
-    padding: 12px; /* Espaçamento interno */
-    background-color: #007bff; /* Cor de fundo azul */
-    border: none; /* Remove a borda padrão */
-    color: white; /* Cor do texto branca */
-    font-size: 16px; /* Tamanho da fonte */
-    border-radius: 5px; /* Bordas arredondadas */
-    cursor: pointer; /* Cursor pointer para indicar que é clicável */
-    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-/* Estilo para os botões ao passar o mouse */
 button:hover {
-    background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+    background-color: #0056b3;
 }
 
 /* Estilo para o botão de login com o Google */
 .google-button {
-    display: flex; /* Usa Flexbox para alinhar o conteúdo */
-    align-items: center; /* Centraliza verticalmente */
-    justify-content: center; /* Centraliza horizontalmente */
-    width: 100%; /* Largura total do container pai */
-    padding: 12px; /* Espaçamento interno */
-    background-color: #4285f4; /* Cor de fundo azul Google */
-    border: none; /* Remove a borda padrão */
-    color: white; /* Cor do texto branca */
-    font-size: 16px; /* Tamanho da fonte */
-    border-radius: 5px; /* Bordas arredondadas */
-    cursor: pointer; /* Cursor pointer para indicar que é clicável */
-    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
-    margin-top: 15px; /* Espaçamento superior */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 12px;
+    background-color: #4285f4;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 15px;
 }
 
-/* Estilo para o botão de login com o Google ao passar o mouse */
 .google-button:hover {
-    background-color: #357ae8; /* Cor de fundo ao passar o mouse */
+    background-color: #357ae8;
 }
 
-/* Estilo para o logo do Google dentro do botão */
 .google-logo {
-    width: 20px; /* Largura do logo */
-    margin-right: 10px; /* Espaçamento à direita */
+    width: 20px;
+    margin-right: 10px;
 }
 
 /* Estilo para as mensagens de erro */
 .error {
-    color: red; /* Cor do texto vermelha */
-    font-size: 12px; /* Tamanho da fonte */
-    height: 12px; /* Altura fixa */
+    color: red;
+    font-size: 12px;
+    height: 12px;
 }
 
-/* Estilo para a mensagem de erro ou sucesso */
 #message {
-    margin-top: 15px; /* Espaçamento superior */
-    color: red; /* Cor do texto vermelha (pode ser alterada via JavaScript) */
+    margin-top: 15px;
+    color: red;
 }
 
-/* Estilo para o texto da política de privacidade e termos de uso */
 .policy-text {
-    margin-top: 20px; /* Espaçamento superior */
-    font-size: 14px; /* Tamanho da fonte */
-    color: #666; /* Cor do texto */
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
 }
 
-/* Estilo para os links dentro do texto da política */
 .policy-text a {
-    color: #007bff; /* Cor do link azul */
-    text-decoration: none; /* Remove o sublinhado padrão */
+    color: #007bff;
+    text-decoration: none;
 }
 
-/* Estilo para os links ao passar o mouse */
 .policy-text a:hover {
-    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+    text-decoration: underline;
 }
 
-/* Estilo para o separador visual */
 .separator {
-    margin: 15px 0; /* Espaçamento superior e inferior */
-    text-align: center; /* Texto centralizado */
-    color: #666; /* Cor do texto */
+    margin: 15px 0;
+    text-align: center;
+    color: #666;
 }
+
